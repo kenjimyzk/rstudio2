@@ -3,7 +3,6 @@ From tokyor/rstudio
 MAINTAINER "kenjimyzk"
 
 # Install packages
-RUN apt install -y libxt-dev
 RUN Rscript -e "install.packages(c('knitr', 'kableExtra'))"
 RUN Rscript -e "install.packages(c('bookdown', 'formatR'))"
 RUN Rscript -e "install.packages(c('tinytex', 'rmarkdown'))"
